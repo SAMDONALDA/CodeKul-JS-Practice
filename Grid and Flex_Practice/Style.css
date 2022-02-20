@@ -1,0 +1,247 @@
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav {
+    font-weight: bold;
+    font-size: larger;
+    display: flex;
+    max-width: 260px;
+    justify-content: space-between;
+    margin-left: 1080px;
+    
+}
+a {
+    text-decoration: none;
+    color: solid black;
+}
+
+.herotxt1 {
+    font-size: larger;
+    margin-top: 150px;
+    margin-left: 200px;
+    line-height: 50px;
+}
+.herotxt2 {
+    line-height: 23px;
+    margin-left: 200px;
+}
+button {
+    margin-left: 200px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    height: 43px;
+    width: 180px;
+    background-color: #FF6464;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.heroimg {
+    margin-top: 130px;
+    height: 350px;
+    float: right;
+    display: flex;
+    margin-right: 290px;    
+}
+
+.body1{
+    height: 500px;
+    background-color: #EDF7FA;
+}
+.recentpost {
+    padding-top: 50px;
+    margin-left: 200px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 350px;
+    margin-left: 200px;
+    gap: 30px;
+}
+.gridbox {
+    
+    border: 0px solid black;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 20px -9px;
+    /* height: 350px;
+    width: 550px;
+    margin-left: 200px;
+    border: #FF6464;
+    border-radius: 5px;
+    box-shadow: 0 3px 20px -9px;
+    background-color: rgb(253, 253, 253); */
+}
+.gbtext {
+ 
+ font-size: 29px;
+}
+.letter {
+    margin: 25px;
+}
+
+.recentpost1 {
+    margin-left: 200px;
+}
+.line1 {
+    display: grid;
+    grid-template-columns: 250px 600px;
+    grid-template-rows: 190px;
+    margin-left: 200px;
+    gap: 30px;
+}
+.twoone {
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 2px;
+    padding-left: 3px;
+    text-align: center;
+    color: white;
+    width: 55px;
+    height: 24px;
+    background-color: #241e3d;
+    border-radius: 50px;
+}
+.smlogos {
+    margin-left: 610px;
+}
+.huri {
+    width: 1100px;
+}
+.fimg {
+    width: 30px; 
+    margin: 30px 0px 0px 30px;
+}
+
+@media screen and (max-width: 400px) and (min-width: 300px)
+{
+    
+    .heroimg {
+        margin-top: 30px;
+        height: 250px;
+        float: right;
+        display: flex;
+        margin-right: 65px;    
+    }
+
+    nav {
+        font-weight: bold;
+        font-size: 15px;
+        display: flex;
+        max-width: 200px;
+        justify-content: space-between;
+        margin-left: 83px;
+        
+    }
+    .herotxt1 {
+        font-size: 12px;
+        margin-top: 270px;
+        margin-left: 2px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .herotxt2 {
+        width: 300px;
+        line-height: 23px;
+        margin-left: 37px;
+        text-align: center;
+    }
+    button {
+        margin-left: 100px;
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        height: 43px;
+        width: 180px;
+        background-color: #FF6464;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .body1{
+        height: 850px;
+        background-color: #EDF7FA;
+    }
+    .recentpost {
+        text-align: center;
+        padding-top: 30px;
+        margin-left: 0px;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: 330px;
+        grid-template-rows: 350px 350px;
+        margin-left: 22px;
+        gap: 30px;
+    }
+    .gridbox {
+        
+        border: 0px solid black;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        box-shadow: 0 3px 20px -9px;
+        /* height: 350px;
+        width: 550px;
+        margin-left: 200px;
+        border: #FF6464;
+        border-radius: 5px;
+        box-shadow: 0 3px 20px -9px;
+        background-color: rgb(253, 253, 253); */
+    }
+
+    .gbtext {
+ 
+        font-size: 19px;
+       }
+       .letter {
+           margin: 25px;
+       }
+       
+       .recentpost1 {
+           text-align: center;
+           margin-left: 0px;
+       }
+       .line1 {
+           display: grid;
+           grid-template-columns: 290px;
+           grid-template-rows: 220px;
+           margin-left: 30px;
+           gap: 3px;
+           width: 300px;
+           height: 450px;
+       }
+       .twoone {
+           font-weight: bold;
+           font-size: larger;
+           padding-top: 2px;
+           padding-left: 3px;
+           text-align: center;
+           color: white;
+           width: 55px;
+           height: 24px;
+           background-color: #241e3d;
+           border-radius: 50px;
+       }
+       .smlogos {
+           margin-left: 45px;
+       }
+       .huri {
+        width: 350px;
+       }
+       .break {
+           display: none;
+       }
+       .img3 {
+           width: 290px;
+       }
+       .text123{
+           font-size: 25px;
+       }
+
+}

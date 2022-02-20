@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="back"> </div>
+        <nav>
+            <a href="">HOME</a>
+            <a href="">BOOKS</a>
+            <a href="">CONTACT</a>
+        </nav>
+    </div>
+    <div class="bannertext">
+        <h1>it seems impossible until it's done</h1>
+        <!-- <h1>We Enhance Your Limitless Cappablity</h1> -->
+        <p>Register Today</p>
+        <img src="Images/right-arrow.png" alt="">
+    </div>
+    <div class="form">
+
+        <form>
+            <div class="toptext">Scholarship Registration</div>
+            <div class="topin">
+                <label for="">Full Name</label>
+                <input id="fname" class="input1" type="text">
+
+                <label for="">Email ID</label>
+                <input id="Email" class="input2" type="email">
+
+
+                <label for="">Gender</label>
+                <select id="input3" name="">
+                    <option id="option1" value="">Select</option>
+                    <option id="option2" value="Male">Male</option>
+                    <option id="option3" value="Femail">Female</option>
+                </select>
+
+                <label for="">Education</label>
+                <input id="Education" class="input4" type="text">
+            </div>
+            <div class="mark">
+                <label for="">Total Marks</label>
+                <input  id="total" class="input5" type="number">
+
+                <label for="">Total Subjects</label>
+                <input  id="subjects" class="input6" type="number">
+
+                <label for="">Total Score</label>
+                <input  id="score" class="input7" type="number">
+            </div>
+            <div class="input8">
+                <a  type="button" onclick="getmarks()" class="But"> submit </a>
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+      function getmarks(){
+          let fuNa = document.getElementById("fname").value;
+          console.log("Full Name:", fuNa);
+          let EmaNa = document.getElementById("Email").value;
+          console.log("Email ID:", EmaNa);
+
+          let Opt2 = document.getElementById("input3").value;
+          console.log("Gender:", Opt2);
+        //   let Opt3 = document.getElementById("option3").value;
+        //   console.log("Gender:", Opt3);
+
+        //   if (Opt2 = true) {
+        //     console.log("Gender: Male");
+        //   } else if (Opt3) {
+        //     console.log("Gender: Female");
+        //   }
+
+
+          let test = document.getElementById("total").value;
+          console.log("Total Marks:", test);
+          let test1 = document.getElementById("subjects").value;
+          console.log("Subjects:", test1);
+          let test2 = document.getElementById("score").value;
+          console.log("Score:", test2);
+          let percentageofmark = ((test2/test)*100);
+          console.log("Percentage:", percentageofmark, "%");
+
+          if (percentageofmark >= 45 && percentageofmark < 65) {
+      console.log("Class: Third Class");
+    } else if (percentageofmark >= 65 && percentageofmark < 85) {
+      console.log("Class: Second Class");
+    } else if (percentageofmark >= 85 && percentageofmark <= 100) {
+      console.log("Class: First Class");
+    } else if (percentageofmark < 45) {
+      console.log("Class: Fail");
+    }
+
+
+    if (percentageofmark >= 45 && percentageofmark <65){
+        console.log("Scholarship Eligiblity: Not Eligible");
+    } else if (percentageofmark >= 65 && percentageofmark < 85){
+    console.log("Scholarship Eligiblity: Partially Eligible");
+    } else if (percentageofmark >= 85 && percentageofmark < 100){
+    console.log("Scholarship Eligiblity: Fully Eligible"); 
+    }
+    }
+
+      
+
+    //   function getmarks (){
+        
+    //   }
+
+
+    
+     
+    
+
+
+    </script>
+
+</body>
+
+
+</html>
