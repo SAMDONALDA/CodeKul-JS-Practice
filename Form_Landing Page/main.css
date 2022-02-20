@@ -1,0 +1,226 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   background-color: rgb(238, 238, 255);
+}
+
+nav {
+    display: inline-block;
+    margin-top: 45px;
+    margin-left: 70px;
+    margin-right: 0%;
+    font-size: large;
+    font-weight: bold;
+
+}
+a {
+    width: 150px;
+    padding: 0px 25px;
+    text-decoration: none;
+    color: #000000;
+}
+img{
+    position: absolute;
+    width: 50px;
+    top: 375px;
+    left: 400px;
+}
+.bannertext {
+    top: 50px;
+    display: flex;
+    position: relative;
+}
+h1 {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 20%;
+    text-transform: uppercase;
+    font-size: 75px;
+    height: 330px;
+    width: 700px;
+    letter-spacing: 2px;
+    color: #000000;
+    line-height: 70px;
+}
+p {
+    margin-left: 90px;
+    margin-top: 370px;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #000000;
+    font-weight: lighter;
+    float: left;
+}
+.main{
+    position: relative;
+}
+
+.back {
+    height: 98vh;
+    width: 60%;
+    float: right;
+    /* margin-right: 50px; */
+    background-image: linear-gradient(-160deg, #d5ff91, #f799ff, #ffe49b,#fcccf8, #9bfdd4, #f799ff, #ffde84,#d0f9ff);
+    /* border-top-left-radius: 100%;
+    border-top-right-radius: 100%; */
+    /* border-bottom-left-radius: 20%; */
+    clip-path:circle( 550px at right);
+}
+.toptext {
+    width: 293px;
+    height: 40px;
+    padding-top: 15px;
+    background-color: #ae00ff;
+    text-align: center;
+    color: white;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: large;
+}
+input {
+    margin: 10px;
+    margin-left: 10px;
+    margin-top: 0%;
+}
+.topin {
+
+    display: inline-block;
+    margin: 20px;
+    margin-left: 10px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+label {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.form {
+    margin-top: 20px;
+    margin-left: 900px;
+    max-width: 293px;
+    height: 590px;
+    background-color: rgb(255, 255, 255);
+    /* border: 4px solid rgb(255, 255, 255); */
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0px 25px -2px;
+    opacity: 80%;
+   
+
+}
+form {
+    position: absolute;
+}
+.input1 {
+    font-weight:bolder;
+    font-size: 15px;
+    height: 30px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.input2 {
+    font-weight:bolder;
+    font-size: 15px;
+    height: 30px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+#input3 {
+    font-weight:bolder;
+    font-size: 15px;
+    height: 35px;
+    width: 246px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.input4 {
+    font-weight:bolder;
+    font-size: 15px;
+    margin-top: 10px;
+    height: 30px;
+    width: 240px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.mark{
+    display: inline-block;
+    margin-left: 20px;
+    max-width: 245px;
+    height: 133px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.input5 {
+    font-weight:bolder;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 50px;
+    height: 25px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.input6 {
+    font-weight:bolder;
+    font-size: 15px;
+    margin-left: 33px;
+    height: 25px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.input7 {
+    font-weight:bolder;
+    font-size: 15px;
+    margin-left: 55px;
+    height: 25px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.input8 {
+    
+    font-weight:bolder;
+    font-size: 17px;
+    margin-left: 90px;
+    height: 25px;
+    width: 70px;
+    /* border: 2px solid black; */
+    border-radius: 50px;
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-right: 40px;
+    padding-bottom: 2px;
+    padding-left: 0%;
+    background-color: #ae00ff;
+    color: white;
+}
+.But {
+    text-transform: uppercase;
+    color: white;
+}
+
+/* .gradcolor {
+    height: 100vh;
+    width: 60%;
+    background-image: linear-gradient(60deg, #ff00c8,#f76bb8, #ffbb00, #ffd900);
+    margin-left: 600px;
+} */
