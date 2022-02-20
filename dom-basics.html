@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+<style>
+    .container{
+        height: 250px;
+        width: 350px;
+        background-color: rgb(172, 223, 252);
+        text-align: center;
+        margin-top: 200px;
+        margin-left: 550px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+    h2 {
+        margin: 0%;
+    }
+    .name {
+        margin: 15px;
+    }
+    .form{
+        margin: 15px;
+    }
+    .button{
+        margin-top: 15px;
+    }
+    .prac{
+        margin-top: 15px;
+    }
+    .clink {
+        margin-top: 20px;
+    }
+</style>
+
+</head>
+
+<body>
+    
+<div class="container">
+      <h2>DOM BASICS</h2>
+<div class="name">
+    <label for=""> Name </label>
+    <input id="getdata" type="text">
+    <button onclick="datacomes()"> Get Data </button>
+</div>
+<div class="from">
+    <label for=""> From </label>
+    <input id="getdata1" type="text">
+    <button onclick="datacomes1()"> Get Data </button>
+    <button class="button" onclick="para()">Create Para</button>
+</div>
+
+<div class="prac">
+   <label for=""> Total Mark </label>
+   <input id="TotalMark" type="number">
+   <button onclick="DisplayMark()">Submit</button>
+</div>
+
+<button class="clink" onclick="href()">Go To The Site</button>
+
+</div>
+    <script>
+        function datacomes() {
+            let fullname = document.getElementById("getdata").value;
+            console.log(fullname);
+        
+            fullname.style.color = "Red"
+        }
+
+        function datacomes1() {
+            let fullname1 = document.getElementById("getdata1").value;
+            console.log(fullname1);
+
+            fullname1.style.color = "Red" 
+        }
+        function para() {
+            let body= document.body;
+            let div = document.createElement("div")
+            let createpara = document.createElement("p")
+            let pcontent = "Hello There! I am Glad you are here";
+            // console.log(createpara);
+            body.append(div);
+            div.appendChild(createpara);
+            createpara.append(pcontent);
+        }
+        function DisplayMark(){
+        let Display = document.getElementById("TotalMark").value;
+        console.log(Display);
+        }
+        function href () {
+             let anchor = document.createElement("a")
+             console.log(anchor)
+         }
+
+    </script>
+</body>
+
+</html>

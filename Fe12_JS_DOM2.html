@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .anchorelement {
+            text-Decoration: none;
+            color:rgb(0, 0, 0);
+            background-Color: rgb(253, 173, 1);
+            border: 1px solid rgb(0, 0, 0);
+            border-Radius: 15px;
+            font-Size: 15px;
+            padding: 4px 6px 6px 6px;
+            display: flex;
+            width: 70px;
+            height: 15px;
+            margin-left: 46.6%;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .anchorelement :hover {
+            
+            background-color: black;
+            color: white;
+            
+        }
+
+        .clink{
+            color: blue;
+            margin-top: 20%;
+            margin-left: 46%;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <button class="clink" onclick="href()">Go To The Site</button>
+
+
+
+    <script>
+        function href() {
+            let body = document.body;
+            let anchor = document.createElement("a")
+            console.log(anchor);
+            body.appendChild(anchor);
+            let text = "Click Here"
+            anchor.append(text);
+            anchor.setAttribute("href", "https://www.google.com")
+            anchor.setAttribute("class", "anchorelement")
+            //  anchor.style.textDecoration = "none";  
+            //  anchor.style.color = "rgb(255, 255, 255)";
+            //  anchor.style.backgroundColor = "rgb(201, 1, 120)";
+            //  anchor.style.border = "5px";
+            //  anchor.style.borderRadius = "15px";
+            //  anchor.style.fontSize = "15px";
+            //  anchor.style.padding = "2px 10px 3px 10px"; 
+            //  *these All will be as a in-line CSS but you can
+            //  target this for CSS using *JS setAttribute* by giving class Name - you can target this given
+            //  class name in CSS* Refer this JS Above.
+
+            let manipulationpurpose = anchor.getAttribute("class");
+            console.log(manipulationpurpose);
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
